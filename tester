@@ -1,0 +1,86 @@
+Tester att göra!
+
+
+App
+- display and fetch user on page  (changePersona, fetchCurrentPersona)
+- should render app with user   (changePersona)
+- should change page from home to bot  (changePage)
+- should change page from bot to home  (changePage)
+
+
+Button
+- button style should be disabled on click, check style
+- button state should be disabled on click, check state
+- should match snapshot
+
+
+AvatarSelector
+- should render img as Zac
+- should render img as Esmeralda
+- should render img as Morgana
+
+
+Comments
+- should remove comment from list
+- should render comment from list
+- should fetch all comments
+
+
+CreateNewComments
+- should create new comments
+
+
+CreateNewPost
+- should create new posts
+
+
+PersonaSwitcher
+- should switch to Zac
+- should switch to Esmeralda
+- should switch to Morgana
+
+
+Posts
+- should remove post from list
+- should render post from list
+- should fetch all post
+
+
+SingleComment
+- test id, author, onClick, currentPersona, comment, date  
+
+
+SinglePosts
+- test title, content, author, id, date, currentPersona, onClick
+
+
+Bot, Message
+- should reply on setState
+- should render messages from state
+
+
+MessageForm
+- should mount form on submit
+
+
+TypingIndicator
+-
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
