@@ -24,7 +24,7 @@ class App extends Component {
     this.setState({ currentPersona: target.value });
     api.storeCurrentPersona(target.value);
   };
-
+  
   changePage = () => {
     if (this.state.currentPage === 'home') {
       this.setState({ currentPage: 'bot' });
