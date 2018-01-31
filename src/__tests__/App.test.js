@@ -5,7 +5,8 @@ import Button from '../components/Button';
 import PersonaSwitcher from '../components/PersonaSwitcher';
 import Posts from '../components/Posts';
 import Bot from '../components/Bot/Bot';
-
+import localStorageMock from '../localStorageMock';
+import * as api from '../api';
 
 describe('Tests for <App /> component', () => {
 
@@ -78,5 +79,33 @@ describe('test if component should render Posts or Bot', () => {
     mountWrapper.setState({currentPage: "home"});
     expect(mountWrapper.find(Bot).length).toBeLessThan(1);
   })
+
+})
+
+describe('test functions related to <App /> state', () => {
+
+  const shallowWrapper = shallow(<App />);
+  const mountWrapper = mount(<App />);
+
+  beforeEach(() => {
+    mountWrapper.state().currentPersona = 'Steffe';
+    mountWrapper.state().currentPage = 'home';
+  })
+
+  beforeEach(() =>{
+    localStorage.clear();
+  });
+  
+  afterEach(() =>{
+    localStorage.clear();
+  });
+
+  it('testing the fetchCurrentPersona function', () => {
+    const name = JSON.stringify('janne');
+    localStorage.setItem('currentPersona', name);
+    mountWrapper.setState({currentPersona: name});
+    expect(mountWrapper.state().currentPersona).toBe(name);
+  })
+
 
 })
