@@ -35,13 +35,5 @@ describe('component should render another component named AvatarSelector', () =>
         const avatar = shallowWrapper.find("AvatarSelector");
         expect(shallowWrapper.find("AvatarSelector").length).toBe(1);
     })
-
-    // it('the AvatarComponent should have a prop called currentPersona', () => {
-    //     const avatar = shallowWrapper.find("AvatarSelector");
-    //     AvatarSelector.currentPersona = "Janne";
-    //     expect(shallowWrapper.find(AvatarSelector)).toBe(1);
-    // })
-
- 
-
+    
 })

@@ -16,4 +16,5 @@ describe('component should render a form tag with children', () => {
         const firstForm = form.first();
         expect(firstForm.children()).toEqual(shallowWrapper.children());
     })
+    
 })

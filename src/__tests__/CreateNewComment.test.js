@@ -22,6 +22,4 @@ describe('testing the form in <CreateNewComment /> component', () => {
         expect(shallowWrapper.find('form').hasClass(classes)).toBe(true);
     })
 
-   
-
 })

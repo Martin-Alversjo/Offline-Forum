@@ -27,7 +27,5 @@ describe('Tests that component renders JSX correcly', () => {
         expect(shallowWrapper.find('p .text-grey-dark').text()).toEqual("Posted by: " + propsAuthor + " @ " + propsDate);
     });
 
-    
-
 })
 

@@ -24,14 +24,3 @@ describe('testing so the <Comments /> component renders correcly', () => {
     })
 
 })
-
-describe('testing the <Comments /> components methods', () => {
-
-    const shallowWrapper = shallow(<Comments currentPersona="Steffe" postId="1" />);
-    const mountWrapper = mount(<Comments currentPersona="Steffe" postId="1" />);
-  
-    beforeEach(() => {
-      Comments.setState({comments: []});
-    });
-  
-})
