@@ -23,10 +23,6 @@ describe('testing so the <Comments /> component renders correcly', () => {
         expect(shallowWrapper.find(CreateNewComment).length).toBe(1);
     })
 
-    // it('should render the SingleComment component if the renderCommentList function is called', () => {
-    //     mountWrapper.instance().renderCommentList;
-    //     expect(mountWrapper.find(SingleComment).length).toBeGreaterThan(0);
-    // })
 })
 
 describe('testing the <Comments /> components methods', () => {
@@ -38,8 +34,4 @@ describe('testing the <Comments /> components methods', () => {
       Comments.setState({comments: []});
     });
   
-    // it('should return a <SingleComment component', () => {
-    //     const singleComments = mountWrapper.instance().renderCommentList;
-    // })
-
 })
